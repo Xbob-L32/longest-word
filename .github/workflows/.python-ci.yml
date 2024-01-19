@@ -13,13 +13,17 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: "3.8"
+
+    - name: Check Python version
+      run: python -V
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install pipenv
-        pipenv --python /c/Users/user/AppData/Local/Programs/Python/Python38/python
         pipenv install --dev --python 3.8
         pipenv install --dev
     - name: Test with nose
       run: |
         pipenv run nosetests
+
