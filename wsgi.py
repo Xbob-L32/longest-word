@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
+from game import Game
 
-# [...]
+app = Flask(__name__)
 
 @app.route('/check', methods=["POST"])
 def check():
