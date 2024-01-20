@@ -13,8 +13,8 @@ pylint = "*"
 astroid = "*"
 
 [requires]
-python_version = "3.8"
-python_full_version = "3.8.0"
+python_version = "3.9"
+python_full_version = "3.9.18"
 
 [pipenv]
 allow_prereleases = true
